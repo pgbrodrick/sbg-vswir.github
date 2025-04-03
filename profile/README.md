@@ -85,21 +85,19 @@ At this point, you are ready to implement your changes!
 As you develop, you should make sure that your branch doesn't veer too far from \<repos\>'s dev branch.  To do this, switch back to your dev branch and make
 sure it's up to date with \<repos\>'s dev branch:
 
-.. code::
-
+```
   git remote add upstream https://github.com/sbg-vswir/\<repos\>.git
   git checkout dev
   git pull upstream dev
-
+```
 
 Then update your feature branch from your local copy of dev, and push it!  We recommend using git's rebase call when possible.
 
-.. code::
-
+```
   git checkout 113-add-spectral-residual
   git rebase dev
   git push --set-upstream origin 113-add-spectral-residual
-
+```
 
 When you are ready to submit your changes back to the \<repos\> repo, go to GitHub
 and make a `Pull Request <https://help.github.com/articles/creating-a-pull-request/>`_
@@ -111,12 +109,11 @@ has changed, and that you need to update your branch so it's easier to merge.
 
 Here's the suggested workflow:
 
-.. code::
-
+```
   git checkout 113-add-spectral-residual
   git pull --rebase upstream dev
   git push --force-with-lease 113-add-spectral-residual
-
+```
 Project Decision Making
 -----------------------
 
